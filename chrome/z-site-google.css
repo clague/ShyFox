@@ -1,1 +1,7 @@
-../../dotfiles-2.0/modules/home-manager/gui/firefox/FF-ULTIMA/theme/z-site-google.css
+@-moz-document domain("google.com") {
+
+  body {
+    background: transparent !important;
+  }
+
+}

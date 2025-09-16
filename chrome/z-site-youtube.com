@@ -1,1 +1,5 @@
-../../dotfiles-2.0/modules/home-manager/gui/firefox/FF-ULTIMA/theme/z-site-youtube.com
+@-moz-document regexp("^https?://(www\\.)?youtubej\\..*") {
+  * {
+    background-color: transparent !important;
+  }
+}
