@@ -33,7 +33,6 @@ Monochrome icons for some extensions
 
 */
 
-@media (-moz-bool-pref: "shyfox.enable.ext.mono.toolbar.icons") {
 
   /* Userchrome Toggle => sidebar icon */
   :is(.webextension-browser-action,
@@ -100,11 +99,9 @@ Monochrome icons for some extensions
     border-radius: 5px !important;
     color: white !important;
   }
-}
 
 /* context menu */
 
-@media (-moz-bool-pref: "shyfox.enable.ext.mono.context.icons") {
   #contentAreaContextMenu, #toolbar-context-menu, #unified-extensions-context-menu{
     /* ublock */
     menuitem[id*="ublock0_raymondhill_net-menuitem-_uBlock0-"]{
@@ -165,7 +162,6 @@ Monochrome icons for some extensions
     background-image: url("../icons/video-download-helper.svg") !important;
   }
   #sidebar-switcher-target[style*="89b69b2a-5ae9-4b43-addc-4bf789f8448f"] #sidebar-icon {list-style-image: url("../icons/video-download-helper.svg") !important;}
-}
 
 /* 
 
@@ -336,7 +332,6 @@ Monochrome icons for some extensions
   &:not(:is(menu, [acceltext])) {padding-right: 0px !important;}
 }
 
-@media (-moz-bool-pref: "shyfox.enable.context.menu.icons") {
   
   /* in page context menu */
   #contentAreaContextMenu{
@@ -508,4 +503,3 @@ Monochrome icons for some extensions
   
   /* bookmarks bar folder menu */
   #PlacesToolbar .openintabs-menuitem {background-image: url("../icons/bookmark-multiple.svg") !important;}
-}

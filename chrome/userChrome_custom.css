@@ -1,0 +1,147 @@
+* {
+    font-weight: 800 !important;
+    --tabpanel-background-color: transparent !important;
+    --panel-item-hover-bgcolor: var(--panel-banner-item-hover-bgcolor);
+}
+
+#main-window {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+#identity-icon-box {
+    /* Hide Extension Box In URL Bar */
+    display: none !important;
+}
+
+:root, #webextpanels-window {
+    background: transparent !important;
+}
+
+.browserStack, #browser, .browserContainer {background: transparent}
+
+#browser {
+    /*  */
+    background: var(--bg-col) !important;
+}
+
+:root, #screenshots-component *{
+    --shy-accent-color: orange;
+}
+
+:root {
+    /* change bg color */
+    --bg-col: #1E1F29D0;
+}
+
+#main-window:is([titlepreface*="᠎"], [titlepreface*="‍"]):not([customizing]) {
+    &:not([titlepreface*="‍"]):has(
+    #sidebar-box:hover,
+    #sidebar-box:focus-within,
+    #PersonalToolbar:hover,
+    #PersonalToolbar *:not(#firefox-view-button)[open],
+    #sidebar-switcher-target[aria-expanded="true"]
+    ) {
+        & #sidebar-box {
+            background: #1E1F29 !important;
+        }
+    }
+}
+
+#main-window:not([inDOMFullscreen="true"])[chromehidden=""] {
+    &:not(:is(:is([titlepreface*="‌"], [titlepreface*="᠎"][titlepreface*="​"])[inFullscreen="true"]), [titlepreface*="‍"]:is([sizemode="maximized"], [inFullscreen="true"], [gtktiledwindow="true"])) {
+        & #appcontent .browserStack::after, & #appcontent browser {
+            border: none !important;
+        }
+    }
+}
+
+toolbar .toolbarbutton-1 .toolbarbutton-text {
+    padding-top: 50% !important;
+    padding-bottom: 50% !important;
+}
+
+#browser > #tabbrowser-tabbox {
+  /* shift website content relative to panels */
+  margin-left: var(--left-margin) !important;
+  margin-right: var(--right-margin)!important;
+  margin-top: var(--top-margin)!important;
+  margin-bottom: var(--bottom-margin)!important;
+
+  /* add smoothness to it */
+  transition: var(--transition) !important;
+}
+
+.browserSidebarContainer {
+    /* firefox 132a need this */
+    background-color: transparent !important;
+}
+
+#main-window:not([inDOMFullscreen="true"])[chromehidden=""] {
+  &:not(:is(:is([titlepreface*="‌"], [titlepreface*="᠎"][titlepreface*="​"])[inFullscreen="true"]), [titlepreface*="‍"]:is([sizemode="maximized"], [inFullscreen="true"], [gtktiledwindow="true"])) {
+    & #tabbrowser-tabpanels::after {
+    /* no border around browser area*/
+    box-shadow: none !important;
+    border: none !important;
+    }
+  }
+}
+
+#main-window:not([inDOMFullscreen="true"])[chromehidden=""] {
+  &:not(:is(:is([titlepreface*="‌"], [titlepreface*="᠎"][titlepreface*="​"])[inFullscreen="true"]), [titlepreface*="‍"]:is([sizemode="maximized"], [inFullscreen="true"], [gtktiledwindow="true"])) {
+    & #tabbrowser-tabbox {
+        /* same as last */
+        border: none !important;
+    }
+  }
+}
+
+:not([breakout-extend=true]) > #urlbar-background {
+    /* transparent urlbar */
+    background-color: transparent !important;
+}
+
+[breakout-extend=true] > #urlbar-background {
+    /* breakout not transparent */
+    background-color: #1e1f29f0 !important;
+}
+
+/* tab loading progress in urlbar background */
+#main-window:not([customizing]):not([titlepreface*="‌"]):has(.tabbrowser-tab[selected][busy]) #urlbar:not([breakout-extend]) #urlbar-background{
+  background: linear-gradient(
+    to right,
+    color-mix(in srgb, var(--shy-color) 0%, transparent) 0 var(--shy-tab-load-pcent),
+    color-mix(in srgb, var(--bt-col) 0%, transparent) var(--shy-tab-load-pcent) 100%
+  ) !important;
+}
+
+menupopup > :is(menuitem, menu) {
+    /* so compact */
+    padding-block: 5px !important;
+    padding-inline-start: 6px !important;
+}
+
+#TabsToolbar-customization-target {
+    top: calc(var(--toolbar-item-hgt) * 2 - 5px) !important;
+    & > * {padding: 4px 2px 4px 0 !important;}
+}
+
+#unified-extensions-button >.toolbarbutton-icon {
+    height: 42px !important;
+    margin-right: 2px !important;
+    scale: 0.80 !important;
+}
+
+#unified-extensions-button {
+    top: calc(var(--toolbar-item-hgt) + 0px);
+}
+
+#sidebar-box {
+  /* top margin */
+  --bookmarks-hgt: 0px !important;
+}
+
+#PersonalToolbar {
+  /*  */
+  display: none;
+}

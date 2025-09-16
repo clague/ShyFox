@@ -7,10 +7,8 @@ Shrink some things so they take up less space
 
 */
 
-@media not (-moz-platform: macos) {
   .menupopup-arrowscrollbox,
   #context-navigation > .menuitem-iconic {border-radius: var(--big-rounding) !important;}
-}
 
 #context-navigation > .menuitem-iconic[disabled="true"] {background-color: transparent !important;}
 
@@ -45,9 +43,8 @@ menupopup > :is(menuitem, menu){
 
 */
 
-@media not (-moz-bool-pref: "shyfox.disable.compact.unified.extensions") {
 
-  #unified-extensions-view{
+  #unified-extensions-view {
 
     --uei-icon-size: 24px;
     --extensions-in-row: 4;
@@ -91,4 +88,3 @@ menupopup > :is(menuitem, menu){
     }
     .unified-extensions-item-action-button {padding-right: 3px !important;}
   }
-}

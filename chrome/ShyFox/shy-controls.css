@@ -62,7 +62,6 @@ Styles for Min Max Close buttons
 }
 
 /* remove window controls by setting */
-@media (-moz-bool-pref: "shyfox.remove.window.controls") { 
   #main-window{
     --window-control-wdt:   0px !important;                        /* < ^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
     --buttonbox-left-hgt:   0px !important;                        /* <                             */
@@ -73,7 +72,6 @@ Styles for Min Max Close buttons
     --nav-lft-btnbx-button: 0px !important;                        /* <      code block above       */
     .titlebar-buttonbox-container {display: none !important;}      /* <                             */
   }
-}
 
 /*
 
