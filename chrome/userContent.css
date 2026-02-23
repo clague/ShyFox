@@ -5,3 +5,7 @@
 @import url("ShyFox/content/shy-global-content.css");
 @import url("ShyFox/shy-variables.css");
 @import url("./userContent_custom.css");
+:root {
+  --in-content-page-background: #00000000 !important;
+  --in-content-box-background: #00000000 !important;
+}

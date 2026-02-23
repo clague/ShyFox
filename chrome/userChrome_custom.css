@@ -2,6 +2,7 @@
     font-weight: 800 !important;
     --tabpanel-background-color: transparent !important;
     --panel-item-hover-bgcolor: var(--panel-banner-item-hover-bgcolor);
+    --toolbar-field-background-color: #13131750 !important;
 }
 
 #main-window {
@@ -31,7 +32,7 @@
 
 :root {
     /* change bg color */
-    --bg-col: #1E1F29D0;
+    --bg-col: #131317D0;
 }
 
 #main-window:is([titlepreface*="᠎"], [titlepreface*="‍"]):not([customizing]) {
@@ -43,7 +44,7 @@
     #sidebar-switcher-target[aria-expanded="true"]
     ) {
         & #sidebar-box {
-            background: #1E1F29 !important;
+            background: #131317 !important;
         }
     }
 }
@@ -103,7 +104,7 @@ toolbar .toolbarbutton-1 .toolbarbutton-text {
 
 [breakout-extend=true] > #urlbar-background {
     /* breakout not transparent */
-    background-color: #1e1f29f0 !important;
+    background-color: #131317f0 !important;
 }
 
 /* tab loading progress in urlbar background */

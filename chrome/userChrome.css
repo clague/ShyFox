@@ -10,3 +10,16 @@
 @import url("ShyFox/shy-icons.css");
 @import url("ShyFox/shy-floating-search.css");
 @import url("./userChrome_custom.css");
+:root {
+  --tabpanel-background-color: #00000000 !important;
+}
+
+.browser-toolbar {
+  &:not(.titlebar-color) {
+    background-color: #00000000 !important;
+  }
+}
+
+toolbox#navigator-toolbox {
+  background-color: #00000000 !important;
+}
